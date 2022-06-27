@@ -94,4 +94,10 @@ public class Employee {
     @Column(name = JpaConst.EMP_COL_DELETE_FLAG, nullable = false)
     private Integer deleteFlag;
 
+    /**
+     * 承認権限があるかどうか（一般：0、承認権限：1）
+     */
+    @Column(name = JpaConst.EMP_COL_DIRECTOR_FLAG, nullable = false)
+    private Integer directorFlag;
+
 }

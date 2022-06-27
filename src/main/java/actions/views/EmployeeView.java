@@ -56,5 +56,11 @@ public class EmployeeView {
      * 削除された従業員かどうか（現役：0、削除済み：1）
      */
     private Integer deleteFlag;
+    /**
+     * 承認権限があるかどうか（一般：0、承認権限：1）
+     */
+    private Integer directorFlag;
+
+
 
 }
