@@ -94,4 +94,9 @@ public class Report {
     @Column(name = JpaConst.REP_COL_UPDATED_AT, nullable = false)
     private LocalDateTime updatedAt;
 
+    /**
+     * 承認されたかどうか（否認：0、承認：1）追加
+     */
+    @Column(name = JpaConst.REP_COL_APPROVAL, nullable = false)
+    private Integer approval;
 }

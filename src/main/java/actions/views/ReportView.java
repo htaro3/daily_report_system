@@ -52,4 +52,9 @@ public class ReportView {
      * 更新日時
      */
     private LocalDateTime updatedAt;
+
+    /**
+     * 承認（否認：0、承認：1）追加
+     */
+    private Integer approval;
 }
