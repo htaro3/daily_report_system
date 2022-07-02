@@ -215,7 +215,7 @@ public class EmployeeAction extends ActionBase {
                     null,
                     null,
                     AttributeConst.DEL_FLAG_FALSE.getIntegerValue(),
-                    toNumber(getRequestParam(AttributeConst.EMP_DIRECTOR_FLG)));//追加
+                    toNumber(getRequestParam(AttributeConst.EMP_DIRECTOR_FLG)));
 
             //アプリケーションスコープからpepper文字列を取得
             String pepper = getContextScope(PropertyConst.PEPPER);

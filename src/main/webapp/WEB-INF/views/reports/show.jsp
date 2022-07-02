@@ -46,6 +46,13 @@
             </p>
         </c:if>
 
+        <c:if test="${sessionScope.login_employee.directorFlag == 1}">
+            <p>
+                <a href="<c:url value='?action=${actRep}&command=${commIdx}' />">承認する</a>
+                <a href="<c:url value='?action=${actRep}&command=${commIdx}' />">否認する</a>
+            </p>
+        </c:if>
+
         <p>
             <a href="<c:url value='?action=${actRep}&command=${commIdx}' />">一覧に戻る</a>
         </p>
