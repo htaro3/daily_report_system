@@ -44,6 +44,10 @@ public interface JpaConst {
     String REP_COL_UPDATED_AT = "updated_at"; //更新日時
     String REP_COL_APPROVAL = "approval";//承認
 
+    int APP_FALSE = 0;
+    int APP_TRUE = 1;
+    int APP_BLANK = 2;
+
     //Entity名
     String ENTITY_EMP = "employee"; //従業員
     String ENTITY_REP = "report"; //日報

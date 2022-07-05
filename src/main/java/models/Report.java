@@ -95,7 +95,7 @@ public class Report {
     private LocalDateTime updatedAt;
 
     /**
-     * 承認されたかどうか（否認：0、承認：1）追加
+     * 承認されたかどうか（否認：0、承認：1 ブランク；2）追加
      */
     @Column(name = JpaConst.REP_COL_APPROVAL, nullable = false)
     private Integer approval;

@@ -6,6 +6,10 @@
 <c:set var="actRep" value="${ForwardConst.ACT_REP.getValue()}" />
 <c:set var="commIdx" value="${ForwardConst.CMD_INDEX.getValue()}" />
 <c:set var="commEdt" value="${ForwardConst.CMD_EDIT.getValue()}" />
+<c:set var="commApp0" value="${ForwardConst.CMD_APPROVAL0.getValue()}" />
+<c:set var="commApp1" value="${ForwardConst.CMD_APPROVAL1.getValue()}" />
+<c:set var="commApp2" value="${ForwardConst.CMD_APPROVAL2.getValue()}" />
+
 
 <c:import url="/WEB-INF/views/layout/app.jsp">
     <c:param name="content">
@@ -48,8 +52,11 @@
 
         <c:if test="${sessionScope.login_employee.directorFlag == 1}">
             <p>
-                <a href="<c:url value='?action=${actRep}&command=${commIdx}' />">承認する</a>
-                <a href="<c:url value='?action=${actRep}&command=${commIdx}' />">否認する</a>
+                <a href="<c:url value='?action=${actRep}&command=${commApp1}' />">承認する</a>
+                <a href="<c:url value='?action=${actRep}&command=${commApp0}' />">否認する</a>
+            </p>
+            <p>
+                <a href="<c:url value='?action=${actRep}&command=${commApp2}' />">承認・否認を削除する</a>
             </p>
         </c:if>
 
