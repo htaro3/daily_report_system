@@ -260,7 +260,7 @@ public class ReportAction extends ActionBase {
 
 
             //idを条件に承認・否認データを削除する
-//            service.approval2(toNumber(getRequestParam(AttributeConst.REP_ID)));
+            service.approval2(toNumber(getRequestParam(AttributeConst.REP_ID)));
 
             //一覧画面にリダイレクト
             redirect(ForwardConst.ACT_REP, ForwardConst.CMD_INDEX);

@@ -52,12 +52,13 @@
 
         <c:if test="${sessionScope.login_employee.directorFlag == 1}">
             <p>
-                <a href="<c:url value='?action=${actRep}&command=${commApp1}' />">承認する</a>
-                <a href="<c:url value='?action=${actRep}&command=${commApp0}' />">否認する</a>
+                <a href="<c:url value='?action=${actRep}&command=${commApp1}&id=${report.id}' />">承認する</a>
+                <a href="<c:url value='?action=${actRep}&command=${commApp0}&id=${report.id}' />">否認する</a>
             </p>
             <p>
-                <a href="<c:url value='?action=${actRep}&command=${commApp2}' />">承認・否認を削除する</a>
+                <a href="<c:url value='?action=${actRep}&command=${commApp2}&id=${report.id}' />">承認・否認を削除する</a>
             </p>
+
         </c:if>
 
         <p>
